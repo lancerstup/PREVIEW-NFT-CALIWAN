@@ -1,0 +1,77 @@
+//key frames
+@keyframes fade-in {
+    from{
+        visibility:hidden;
+        opacity:0;
+
+    }
+    1%{
+        visibility:visible;
+    }
+
+    to{
+        visibility:visible;
+        opacity:0.5;
+
+    }
+}
+
+@keyframes fade-go {
+    from{
+        visibility:hidden;
+        opacity:0;
+
+    }
+    1%{
+        visibility:visible;
+    }
+
+    to{
+        visibility:visible;
+        opacity:1;
+
+    }
+}
+
+
+
+
+@keyframes fade-out {
+    from{
+        visibility:visible;
+        opacity:0.5;
+
+    }
+
+    99%{
+        visibility:visible;
+        opacity:0;
+    }
+    
+    to{
+        visibility:hidden;
+        opacity:0;
+
+    }
+}
+
+//end
+
+//animations class
+
+.fade-in{
+    animation: fade-in 350ms ease-in-out forwards
+}
+
+.fade-go{
+    animation: fade-go 350ms ease-in-out forwards
+}
+
+.fade-out{
+    animation: fade-out 350ms ease-in-out forwards
+}
+
+.visible{
+    z-index:100;
+}
+
